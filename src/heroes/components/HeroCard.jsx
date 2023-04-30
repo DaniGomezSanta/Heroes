@@ -33,7 +33,7 @@ export const HeroCard = ({
                         <img src={ heroImageUrl } className="card-img" alt={ superhero } />
                     </div>
 
-                    <div className="col-8">
+                    <div className="col-8">  
 
                         <div className="card-body">
 
