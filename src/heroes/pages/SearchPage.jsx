@@ -39,7 +39,7 @@ const SearchPage = () => {
       <div className="col-5">
         <h4>Searching</h4>
         <hr/>
-        <form onSubmit={ onSearchsubmit }>
+        <form onSubmit={ onSearchsubmit } aria-level='form'>
           <input 
           type="text"
           placeholder='Search a hero'
@@ -73,7 +73,8 @@ const SearchPage = () => {
           Search a hero 
         </div> 
 
-        <div className='alert alert-danger animate__animated animate__fadeIn' style={{display: showError ? '' : 'none'}}>
+        <div arial-label='alert-danger' className='alert alert-danger animate__animated animate__fadeIn' 
+        style={{display: showError ? '' : 'none'}}>
           No hero with <b>{ q }</b>
         </div>
 

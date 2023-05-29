@@ -19,6 +19,7 @@ describe('Pruebas en el <AppRouter/>', () => {
             </MemoryRouter>
         );
 
+
         expect( screen.getAllByText('Login').length).toBe(2); 
     })
 
@@ -39,7 +40,7 @@ describe('Pruebas en el <AppRouter/>', () => {
                </MemoryRouter>
             )
 
-            expect( screen.getAllByText('Mrvel').length).toBeGreaterThanOrEqual(1); 
+            expect( screen.getAllByText('Marvel').length).toBeGreaterThanOrEqual(1); 
         
 
     })
