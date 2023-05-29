@@ -1,5 +1,4 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
-import { Navbar } from '../ui'; 
+import { Route, Routes } from 'react-router-dom';
 import {LoginPage} from '../auth/pages/LoginPage'
 import HeroesRoutes from '../heroes/routes/HeroesRoutes';
 import { PrivateRoute } from './PrivateRoute';
@@ -11,9 +10,12 @@ const AppRouter = () => {
 
     <Routes>
       
-        <Route path='login' element={
+        <Route path='login/*' element={
         <PublicRoute>
-          <LoginPage/>
+          {/* <LoginPage/> */}
+          <Routes>
+            <Route path='/*' element={<LoginPage/>}/>
+          </Routes>
         </PublicRoute>    
         }/>
 
