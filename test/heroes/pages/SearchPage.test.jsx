@@ -76,7 +76,7 @@ describe('Prubeas en <SearchPage/>', () => {
 
         expect( mockedUseNavigate ).toHaveBeenCalledWith(`?q=${inputValue}`)
       })
-      
+       
       
     
 })
